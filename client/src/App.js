@@ -1,21 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { Switch, Route } from "react-router-dom";
+import NavBar from "./NavBar";
+import Login from "../pages/Login";
 
-import { useState, useEffect } from "react";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
-    fetch("/hello")
-      .then((r) => r.json())
-      .then((data) => setCount(data.count));
+    // auto-login
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
   }, []);
 
+  if (!user) return <Login onLogin={setUser} />;
+
   return (
-    <div className="App">
-      <h1>Page Count: {count}</h1>
-    </div>
+    <>
+      <NavBar user={user} setUser={setUser} />
+      <main>
+        <Switch>
+          {/* <Route path="/new">
+            
+          </Route>
+          <Route path="/">
+            
+          </Route> */}
+        </Switch>
+      </main>
+    </>
   );
 }
 
