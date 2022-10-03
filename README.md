@@ -1,26 +1,33 @@
-# carry-connect
-A collect-all comm/repo app tailored to the surrogacy journey, for Intended Parents &amp; Gestational Carriers.
-# README
+# CarryConnect ReadMe
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An app for gestational carriers and intended parents to share their journey convenientally.
 
-Things you may want to cover:
+## Languages
 
-* Ruby version
+- Ruby/Rails
+- Javascript/React
+- Bootstrap
 
-* System dependencies
 
-* Configuration
+## LANDKIT
 
-* Database creation
+Landkit Theme by Good Themes.
 
-* Database initialization
+### Documentation
 
-* How to run the test suite
+Development documentation is available at `src/html/docs/index.html` (or `dist/docs/index.html` once you've compiled), or visit http://landkit.goodthemes.co/docs/index.html.
 
-* Services (job queues, cache servers, search engines, etc.)
+### Getting Started
 
-* Deployment instructions
+The steps to compile and get started with development are covered in detail in documentation mentioned above, but the summary is:
 
-* ...
+- npm install
+- npm start
+
+### Design Files
+
+We provide an "unofficial" Landkit Figma file for you to play with. Learn more about it at https://www.figma.com/file/e6SElg0s79XUTzHfvJkbhV/LandKit-2.0.0-beta-Distsributed?node-id=2016%3A15971.
+
+### Support
+
+Good Themes is happy to provide support for issues. Shoot us an email at support@goodthemes.co and we'll get you squared away.
