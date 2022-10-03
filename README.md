@@ -1,6 +1,6 @@
 # CarryConnect ReadMe
 
-An app for gestational carriers and intended parents to share their journey convenientally.
+A collect-all comm/repo app tailored to the surrogacy journey, for Intended Parents & Gestational Carriers.
 
 ## Languages
 
