@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import Login from "../pages/Login";
 
@@ -22,14 +22,14 @@ function App() {
     <>
       <NavBar user={user} setUser={setUser} />
       <main>
-        <Switch>
+        <Routes>
           {/* <Route path="/new">
             
           </Route>
           <Route path="/">
             
           </Route> */}
-        </Switch>
+        </Routes>
       </main>
     </>
   );

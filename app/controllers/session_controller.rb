@@ -5,6 +5,8 @@ class SessionController < ApplicationController
     user = User.find_by(username: params[:username])
     if user&.authenticate(params[:password])
       session[:user_id] = user.id
+      session[:expire_after] = Time.current + 15.minutes
+      p session
       render json: user
     else
       render json: { errors: ["Invalid username or password"] }, status: :unauthorized
