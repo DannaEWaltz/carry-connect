@@ -1,59 +1,53 @@
-import { useState } from "react";
-import styled from "styled-components";
-import LoginForm from "../components/LoginForm";
-import SignUpForm from "../components/SignUpForm";
-import { Button } from "../styles";
+// import { useState } from "react";
+// import 'bootstrap/dist/css/bootstrap.css';
+// import LoginForm from "../components/LoginForm";
+// import SignUpForm from "../components/SignUpForm";
 
-function Login({ onLogin }) {
-  const [showLogin, setShowLogin] = useState(true);
 
-  return (
-    <Wrapper>
-      <Logo>Carry Connect</Logo>
-      {showLogin ? (
-        <>
-          <LoginForm onLogin={onLogin} />
-          <Divider />
-          <p>
-            Let's get started &nbsp;
-            <Button color="secondary" onClick={() => setShowLogin(false)}>
-              Make An Account
-            </Button>
-          </p>
-        </>
-      ) : (
-        <>
-          <SignUpForm onLogin={onLogin} />
-          <Divider />
-          <p>
-            Already have an account? &nbsp;
-            <Button color="secondary" onClick={() => setShowLogin(true)}>
-              Log In
-            </Button>
-          </p>
-        </>
-      )}
-    </Wrapper>
-  );
-}
+// function Login({ onLogin }) {
+//   const [showLogin, setShowLogin] = useState(true);
 
-const Logo = styled.h1`
-  font-family: "Permanent Marker", cursive;
-  font-size: 3rem;
-  color: deeppink;
-  margin: 8px 0 16px;
-`;
+//   return (
+//     <div>
+//     <Form>
+//    <FormGroup row>
+//       <Label for="exampleEmail" sm={2}>Email</Label>
+//       <Col sm={10}>
+//           <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+//       </Col>
+//    </FormGroup>
 
-const Wrapper = styled.section`
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 16px;
-`;
+//    <FormGroup row>
+//       <Label for="examplePassword" sm={2}>Password</Label>
+//       <Col sm={10}>
+//          <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
+//       </Col>
+//    </FormGroup>
 
-const Divider = styled.hr`
-  border: none;
-  border-bottom: 1px solid #ccc;
-  margin: 16px 0;
-`;
+//    <FormGroup row>
+//       <Label for="exampleSelect" sm={2}>Select</Label>
+//       <Col sm={10}>
+//           <Input type="select" name="select" id="exampleSelect" />
+//       </Col>
+//    </FormGroup>
 
-export default Login;
+//    <FormGroup row>
+//       <Label for="exampleSelectMulti" sm={2}>Select Multiple</Label>
+//       <Col sm={10}>
+//         <Input type="select" name="selectMulti" id="exampleSelectMulti" multiple />
+//       </Col>
+//     </FormGroup>
+
+//   <FormGroup row>
+//     <Label for="exampleText" sm={2}>Text Area</Label>
+//     <Col sm={10}>
+//       <Input type="textarea" name="text" id="exampleText" />
+//     </Col>
+//   </FormGroup>
+// </Form>
+// </div>
+//   );
+// }
+
+
+// export default Login;

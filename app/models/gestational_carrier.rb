@@ -1,0 +1,2 @@
+class GestationalCarrier < ApplicationRecord
+end
