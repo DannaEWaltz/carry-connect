@@ -1,0 +1,2 @@
+class IntendedParent < ApplicationRecord
+end

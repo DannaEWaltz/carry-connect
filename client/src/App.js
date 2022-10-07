@@ -1,38 +1,30 @@
-import React, { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import NavBar from "./NavBar";
-import Login from "../pages/Login";
+// import React, { useEffect, useState } from "react";
+// // import { Routes, Route } from "react-router-dom";
+// import NavBar from "./NavBar";
+// import Login from "./Login";
+// import 'bootstrap/dist/css/bootstrap.css'; 
 
 
-function App() {
-  const [user, setUser] = useState(null);
 
-  useEffect(() => {
-    // auto-login
-    fetch("/me").then((r) => {
-      if (r.ok) {
-        r.json().then((user) => setUser(user));
-      }
-    });
-  }, []);
+// function App() {
+//   const [user, setUser] = useState(null);
 
-  if (!user) return <Login onLogin={setUser} />;
+//   useEffect(() => {
+//     // auto-login
+//     fetch("/me").then((r) => {
+//       if (r.ok) {
+//         r.json().then((user) => setUser(user));
+//       }
+//     });
+//   }, []);
 
-  return (
-    <>
-      <NavBar user={user} setUser={setUser} />
-      <main>
-        <Routes>
-          {/* <Route path="/new">
-            
-          </Route>
-          <Route path="/">
-            
-          </Route> */}
-        </Routes>
-      </main>
-    </>
-  );
-}
+//   if (!user) return <Login onLogin={setUser} />;
 
-export default App;
+//   return (
+//     <>
+//       <NavBar></NavBar>
+//     </>
+//   );
+// }
+
+// export default App;
